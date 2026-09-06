@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Descubre Vinces</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo"><h1>Descubre Vinces</h1></div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Reserva tu Experiencia</h2>
+        <form class="contact-form">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="destino">Destino o actividad de interés:</label>
+            <input type="text" id="destino" name="destino" required>
+
+            <label for="fecha">Fecha de visita:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="personas">Número de personas:</label>
+            <input type="number" id="personas" name="personas" min="1" required>
+
+            <label for="servicio">Tipo de servicio:</label>
+            <select id="servicio" name="servicio" required>
+                <option value="">-- Seleccione una opción --</option>
+                <option value="cacao">Ruta del Cacao Arriba</option>
+                <option value="paris">Tour París Chiquito</option>
+                <option value="humedal">Ecotour Humedal</option>
+                <option value="fin-semana">Escapada Fin de Semana</option>
+            </select>
+
+            <label for="mensaje">Mensaje o requerimiento especial:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Enviar Reserva</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Descubre Vinces - Proyecto Académico Evelyn Cortez</p>
+    </footer>
+</body>
+</html>
